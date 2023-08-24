@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>TRIVIA</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li class="Presente"><a href="ConfigurarJuego.html">Settings</a></li>
+            <li><a href="Juego.html">Juego</a></li>
+            <li><a href="Ganaste.html">Ganaste</a></li>
+            <li><a href="Fin.html">Perdiste</a></li>
+            <li><a href="Incorrecta1.html">Incorrecta1</a></li>
+            <li><a href="Incorrecta2.html">Incorrecta2</a></li>
+            <li><a href="Incorrecta3.html">Incorrecta3</a></li>
+            <li><a href="Respuesta.html">Respuesta</a></li>
+        </ul>
+    </nav>
+    <section id="select-cat-dif">
+        <form action='Juego.html'>
+            <h1>PICK TOPIC</h1>
+            <main>
+                <div class="categoria">
+                    <label><input type="radio"><img src="img/hungerGames.jpeg" alt="Juegos del Hambre"></label>
+                </div>
+                <div class="categoria">
+                    <label><input type="radio"><img src="img/HSM.jpeg" alt="High School Musical"></label>
+                </div>
+                <div class="categoria">
+                    <label><input type="radio"><img src="img/OUT.jpeg" alt="Once Upon a TIme"></label>
+                </div>
+                <div class="categoria">
+                    <label><input type="radio"><img src="img/heartstopper.jpeg" alt="Heartstopper"></label>
+                </div>
+                <div class="categoria">
+                    <label><input type="radio"><img src="img/bridgerton.jpeg" alt="Bridgerton"></label>
+                </div>
+                <div class="categoria">
+                    <label><input type="radio"><img src="img/todasCategorias.PNG" alt="Todas las categorías"></label>
+                </div>     
+            </main>
+            <h1>PICK DIFFICULTY</h1>
+            <main><!--dificultades-->
+                <div class="dificultad">
+                    <label><input type="radio" name="dificultad" value="1"><img src="img/Facil.png" alt="Todas las dificultades"></label>
+                </div>
+                <div class="dificultad">
+                    <label><input type="radio" name="dificultad" value="2"><img src="img/Medio.png" alt="Todas las dificultades"></label>
+                </div>
+                <div class="dificultad">
+                    <label><input type="radio" name="dificultad" value="3"><img src="img/Dificil.png" alt="Todas las dificultades"></label>
+                </div>
+                <div class="dificultad">
+                    <label><input type="radio" name="dificultad" value="-1"><img src="img/todasDificultades.png" alt="Todas las dificultades"></label>
+                </div>
+            </main>
+            <button type="submit" class="btn btn-warning">PLAY</button>
+        </form>
+    </section>
+    
+</body>
+</html>
