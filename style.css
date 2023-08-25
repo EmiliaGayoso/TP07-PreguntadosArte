@@ -158,7 +158,9 @@ section .inicio-centrado .btn-outline-warning {
 /*Juego*/
 
 .juego:not(.lista-horizontal){
-    background-color: black;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/254/680/original/cinema-background-concept-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,7 +168,8 @@ section .inicio-centrado .btn-outline-warning {
 }
 .pregunta{
     width: 50%;
-    height: 250px;
+    color: white;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -175,8 +178,8 @@ section .inicio-centrado .btn-outline-warning {
     margin-bottom: 1%;
     padding: 20px;
     border-radius: 50px;
-    background-color: #DCDCDC;
-    box-shadow:10px 10px 10px #8c0000 ;
+    background-color: #790000;
+    box-shadow: 0px 0px 10px 10px #8c0000 ;
 }
 .pregunta div{
   width: 40%;
@@ -190,6 +193,7 @@ section .inicio-centrado .btn-outline-warning {
 .pregunta img {
   width: 80%;
   height: auto;
+  border-radius: 20px;
 }
 .pregunta h1
 {
@@ -209,29 +213,28 @@ section .inicio-centrado .btn-outline-warning {
     display: flex;
     flex-direction: column;
 }
-.respuesta .sub{
-    display: flex;
-    justify-content: space-between;
-    margin:0;
-    width: 100%;
-    height: 30%;
+.respuesta
+{
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
-.respuesta .sub a{
-  width: 80%;
+.respuesta a{
+  width: 47%;
   font-size: 24px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-decoration: none;
   font-weight: bold;
   margin: 2%;
-  padding: 2.5%;
-  padding-left: 18%;
-  padding-right:18%;
+  padding: 2.5% 10%;
   color: black;
-  background-color: #bab9b9;
+  background-color: #f1f1f1;
   border-radius: 20px;
 }
 
-.respuesta .sub a div 
+.respuesta a div 
 {
   width: 100%;
   display: flex;
@@ -239,18 +242,19 @@ section .inicio-centrado .btn-outline-warning {
   align-items: center;
   text-align: center;
 }  
-.respuesta .sub a:hover:not(.correcta,.incorrecta) 
+.respuesta a:hover:not(.correcta,.incorrecta) 
 {
-  background-color: #f1f1f1;
+  background-color: #bab9b9;
 }
-.respuesta .sub a div p
+.respuesta a div p
 {
   width: 100%;
+  margin: 0;
 }
-.respuesta .sub .incorrecta{
+.respuesta .incorrecta{
   background-color: #df2323;
 }
-.respuesta .sub .correcta{
+.respuesta .correcta{
   background-color: rgb(134, 255, 134);
 }
 .avanzar{
@@ -269,7 +273,7 @@ section .inicio-centrado .btn-outline-warning {
     position: relative;
     margin-top: 15%;
     animation-name: animacion;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     text-decoration: none;
